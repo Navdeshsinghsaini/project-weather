@@ -11,8 +11,7 @@ function Newlook () {
     const [inputcity , setinputcity] = useState('');
 
    const getWeatherData = (cityName) => {
-    if (!cityName) {
-
+    if (!cityName) { 
     }
 
     const apiUrl = "http://api.openweathermap.org/data/2.5/weather?q= " + cityName + "&appid=" + apikey;
@@ -45,7 +44,7 @@ function Newlook () {
         <div className="working-div" >
             <div className="present-data-div">
               <div className="state-name">
-                  <h2 className="current-name-1" > {data?.sys?.country} </h2>
+                  <h2 className="current-name-1" > {data?.sys?.country } </h2>
                   <h1 className="current-name-2" > {data.name} </h1>
                   </div>
             <div className="current-data-div">
